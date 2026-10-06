@@ -1,0 +1,111 @@
+.ej5 {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  color: #3a3a4a;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.ej5-volver {
+  align-self: flex-start;
+  color: #6a7bb5;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.ej5-volver:hover {
+  text-decoration: underline;
+}
+
+.ej5-contenedor h2 {
+  margin: 0 0 16px;
+}
+
+.ej5-tabla-scroll {
+  overflow-x: auto;
+}
+
+.ej5-tabla {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  border: 2px solid #f2bd92;
+  border-radius: 8px;
+}
+
+.ej5-tabla th {
+  background: #ffd9b8;
+  padding: 12px 14px;
+  text-align: center;
+  border: 1px solid #f2bd92;
+}
+
+.ej5-tabla td {
+  padding: 12px 14px;
+  text-align: center;
+  border: 1px solid #f2d3bb;
+}
+
+.ej5-tabla tbody tr:nth-child(even) {
+  background: #fff6ee;
+}
+
+.ej5-tabla tbody tr:hover {
+  background: #cddcf2;
+}
+
+.ej5-tabla button {
+  padding: 6px 16px;
+  background: #cdeed6;
+  border: 2px solid #a8d9b5;
+  border-radius: 6px;
+  font-weight: bold;
+  color: #3a3a4a;
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    border-color 0.2s;
+}
+
+.ej5-tabla button:hover {
+  background: #b8e5c4;
+  border-color: #82c493;
+}
+
+.ej5-detalle {
+  margin-top: 18px;
+  background: #ffffff;
+  border: 2px solid #e6cdee;
+  border-radius: 12px;
+  padding: 16px 20px;
+  box-shadow: 0 4px 12px rgba(150, 120, 170, 0.2);
+}
+
+.ej5-detalle h3 {
+  margin: 0 0 10px;
+  padding-bottom: 8px;
+  color: #8c63a0;
+}
+
+.ej5-detalle p {
+  margin: 6px 0;
+}
+
+@media (max-width: 600px) {
+  .ej5 {
+    padding: 10px;
+  }
+
+  .ej5-tabla th,
+  .ej5-tabla td {
+    padding: 8px 6px;
+    font-size: 0.9rem;
+  }
+
+  .ej5-tabla button {
+    padding: 5px 10px;
+  }
+}
