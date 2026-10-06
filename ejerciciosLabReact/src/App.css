@@ -83,6 +83,15 @@
   border-color: #82c493;
 }
 
+.boton-4 {
+  background: #ffe9b8;
+  border: 2px solid #f2d68f;
+}
+
+.boton-4:hover {
+  border-color: #e3c068;
+}
+
 @media (max-width: 600px) {
   .inicio-botones {
     flex-direction: column;
