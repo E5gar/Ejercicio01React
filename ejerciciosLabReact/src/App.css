@@ -24,6 +24,8 @@
 
 .inicio-botones {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
 }
 
@@ -38,7 +40,10 @@
   font-size: 1.3rem;
   font-weight: bold;
   text-decoration: none;
-  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s,
+    border-color 0.2s;
 }
 
 .boton span {
@@ -68,6 +73,14 @@
 
 .boton-2:hover {
   border-color: #8faed9;
+}
+.boton-3 {
+  background: #cdeed6;
+  border: 2px solid #a8d9b5;
+}
+
+.boton-3:hover {
+  border-color: #82c493;
 }
 
 @media (max-width: 600px) {
