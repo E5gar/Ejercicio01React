@@ -1,11 +1,22 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
+import Header from './components/Header.jsx';
+import Nav from './components/Nav.jsx';
+import Main from './components/Main.jsx';
+import Footer from './components/Footer.jsx';
+import './ejercicio1.css';
 
-export default function Ejercicio1() {
+function Ejercicio1() {
   return (
-    <div style={{ padding: '20px' }}>
-      <h2>Ejercicio 1</h2>
-      <Link to="/">Volver al inicio</Link>
+    <div className="ej1">
+      <Link to="/" className="ej1-volver">
+        Regresar al Menú
+      </Link>
+      <Header />
+      <Nav />
+      <Main />
+      <Footer />
     </div>
   );
 }
+
+export default Ejercicio1;
