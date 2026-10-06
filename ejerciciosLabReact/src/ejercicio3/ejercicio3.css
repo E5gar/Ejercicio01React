@@ -1,0 +1,103 @@
+.ej3 {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  color: #3a3a4a;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.ej3-volver {
+  align-self: flex-start;
+  color: #6a7bb5;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.ej3-volver:hover {
+  text-decoration: underline;
+}
+
+.ej3-titulo {
+  margin: 0 0 10px;
+  font-weight: bold;
+}
+
+.ej3-padre {
+  background: #cddcf2;
+  border: 2px solid #aac0e3;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ej3-resultado {
+  background: #ffffff;
+  border: 2px solid #e6cdee;
+  border-radius: 12px;
+  padding: 14px 20px;
+  box-shadow: 0 4px 12px rgba(150, 120, 170, 0.2);
+}
+
+.ej3-resultado p {
+  margin: 0 0 8px;
+}
+
+.ej3-resultado h3 {
+  margin: 0;
+  color: #8c63a0;
+  word-break: break-word;
+}
+
+.ej3-hijo {
+  background: #cdeed6;
+  border: 2px solid #a8d9b5;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ej3-hijo input {
+  padding: 10px 12px;
+  border: 2px solid #a8d9b5;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.ej3-hijo input:focus {
+  border-color: #8cc79c;
+}
+
+.ej3-hijo button {
+  padding: 10px 14px;
+  background: #ffd9b8;
+  border: 2px solid #f2bd92;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #3a3a4a;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.ej3-hijo button:hover {
+  background: #ffc999;
+}
+
+@media (max-width: 600px) {
+  .ej3 {
+    padding: 10px;
+  }
+
+  .ej3-padre,
+  .ej3-hijo {
+    padding: 12px;
+  }
+}
