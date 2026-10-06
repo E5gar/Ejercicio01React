@@ -1,0 +1,165 @@
+.ej1 {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  color: #3a3a4a;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.ej1-volver {
+  align-self: flex-start;
+  color: #6a7bb5;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.ej1-volver:hover {
+  text-decoration: underline;
+}
+
+.ej1-header {
+  background: #ffd9b8;
+  border: 2px solid #f2bd92;
+  border-radius: 8px;
+  min-height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ej1-header h1 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-family: monospace;
+}
+
+.ej1-nav {
+  background: #cddcf2;
+  border: 2px solid #aac0e3;
+  border-radius: 8px;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: monospace;
+}
+
+.ej1-main {
+  background: #cdeed6;
+  border: 2px solid #a8d9b5;
+  border-radius: 8px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+.ej1-contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.ej1-etiqueta {
+  margin: 0;
+  font-family: monospace;
+  font-weight: bold;
+}
+
+.ej1-articulos {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.ej1-article {
+  background: #c9ccf5;
+  border: 2px solid #a8adea;
+  border-radius: 6px;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: monospace;
+}
+
+.ej1-aside {
+  background: #e6cdee;
+  border: 2px solid #cfa9dc;
+  border-radius: 6px;
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-family: monospace;
+}
+
+.ej1-footer {
+  background: #dcdce6;
+  border: 2px solid #bfbfce;
+  border-radius: 8px;
+  min-height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: monospace;
+}
+
+@media (max-width: 992px) {
+  .ej1-header {
+    min-height: 120px;
+  }
+
+  .ej1-main {
+    grid-template-columns: 1fr;
+  }
+
+  .ej1-articulos {
+    flex-direction: row;
+  }
+
+  .ej1-article {
+    flex: 1;
+    min-height: 100px;
+  }
+
+  .ej1-aside {
+    min-height: 140px;
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 600px) {
+  .ej1 {
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .ej1-header {
+    min-height: 90px;
+  }
+
+  .ej1-main {
+    padding: 12px;
+    gap: 14px;
+  }
+
+  .ej1-articulos {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .ej1-aside {
+    min-height: 110px;
+  }
+
+  .ej1-footer {
+    min-height: 70px;
+  }
+}
